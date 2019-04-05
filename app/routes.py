@@ -9,4 +9,9 @@ from app import app
 def index():
     return render_template('index.html')
 
+@app.route('/dom_vio_sta')
+@app.route('/index/dom_vio_sta')
+def dom_vio_sta():
+    return render_template('dom_vio_sta.html')
+
 # As setting the action attribute to an empty string, it will going to come back on the same url when the browser submits the form to us
